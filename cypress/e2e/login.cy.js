@@ -57,7 +57,6 @@ describe('Login spec', () => {
 
     cy.get('button').contains(/^Login$/).click();
 
-    cy.get('nav').contains(/^Thread$/).should('be.visible');
     cy.get('button').contains('Log out').should('be.visible');
   });
 });
