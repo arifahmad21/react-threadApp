@@ -23,7 +23,7 @@ const LoginPage = () => {
           Don&apos;t have an account?
           {' '}
           <Link to="/register" className="text-yellow-800 underline">
-            click here to register
+            click to register
           </Link>
         </p>
       </article>
