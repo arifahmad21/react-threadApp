@@ -29,7 +29,7 @@ describe('Login spec', () => {
   });
 
   it('should display alert when password is empty', () => {
-    cy.get('input[placeholder="Email"]').type('tryariff@gmail.com');
+    cy.get('input[placeholder="Email"]').type('testariff@gmail.com');
 
     cy.get('button').contains(/^Login$/).click();
 
@@ -39,7 +39,7 @@ describe('Login spec', () => {
   });
 
   it('should display alert when email and password are wrong', () => {
-    cy.get('input[placeholder="Email"]').type('tryariff@gmail.com');
+    cy.get('input[placeholder="Email"]').type('testariff@gmail.com');
 
     cy.get('input[placeholder="Password"]').type('wrongpass');
 
@@ -51,9 +51,9 @@ describe('Login spec', () => {
   });
 
   it('should display homepage when email and password are correct', () => {
-    cy.get('input[placeholder="Email"]').type('tryariff@gmail.com');
+    cy.get('input[placeholder="Email"]').type('testariff@gmail.com');
 
-    cy.get('input[placeholder="Password"]').type('yeamplow');
+    cy.get('input[placeholder="Password"]').type('qwerty123');
 
     cy.get('button').contains(/^Login$/).click();
 
